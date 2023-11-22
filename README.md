@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!-- saved from url=(0169)file:///C:/Users/mane_/OneDrive/Escritorio/%C3%9Altimo%20Semestre/Internet%20de%20las%20cosas/Segundo%20Parcial/RFID_y_Bluetooth_con_registro_en_BD/Prueba.html?Estado=0# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>Prueba</title>

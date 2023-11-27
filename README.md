@@ -37,7 +37,7 @@
 		<button style="background-color:lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">GREEN</button>
 		<button style="background-color:lightblue; border-color:blue; width:70px; height:70px" id="azul">BLUE</button>
 		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">RED</button>
-		<button style="background-color:lightyellow; border-color:yellow; width:70px; height:70px" id="amarillo">YELLOW</button>
+		<button style="background-color:lightyellow; border-color:yellow; width:90px; height:70px" id="amarillo">YELLOW</button>
 
 		<font size="5" color="white" face="Times New Roman">
 		<h5>Información</h5></font>

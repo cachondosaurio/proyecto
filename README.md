@@ -17,7 +17,7 @@
 		<font size="5" color="87CEEB">
 		<h1>"PAWS & MUNCHIES"</h1></font>
 		<font size="5" color="white" face="Times New Roman">
-		<h4>Fundamentos de Bases de datos e Internet de las cosas</br>
+		<h4>Fundamentos de Bases de datos e Internet de las cosas
 
 		<h4> Usuario: <span id="user"></span>
 		<h4> Estado: <span id="edo"></span></h4>
@@ -33,18 +33,15 @@
 		<option value="1"> Cerrar</option></font>
 		</select>
 		<br><br><br/>
-		</form>
-
-		<! – Botones para abrir dispensadores –>
+		
 		<button style="background-color:lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">GREEN</button>
 		<button style="background-color:lightblue; border-color:blue; width:70px; height:70px" id="azul">BLUE</button>
 		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">RED</button>
-		<button style="background-color:lightyellow; border-color:yellow; width:70px; height:70px" id="amarillo">YELLOW</button></br></br></br>
+		<button style="background-color:lightyellow; border-color:yellow; width:70px; height:70px" id="amarillo">YELLOW</button>
 
 		<font size="5" color="white" face="Times New Roman">
 		<h5>Información</h5></font>
 
-		<! – Botones para informacion –>
 		<button style="background-color: lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">Ave</button>
 		<button style="background-color:lightblue; border-color:blue;width:70px; height:70px" id="azul">Ardilla</button>
 		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">Perro</button>

@@ -11,6 +11,7 @@
 	<img src="itcelaya logo.png"
 	width="200"
 	height="200"
+	align="left"
 	 />
 
 	<div id="Ingresar">

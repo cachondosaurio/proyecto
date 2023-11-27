@@ -32,7 +32,7 @@
 		<option value="0"> Abrir </option>
 		<option value="1"> Cerrar</option></font>
 		</select>
-		<br><br><br/>
+		<br><br>
 		
 		<button style="background-color:lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">GREEN</button>
 		<button style="background-color:lightblue; border-color:blue; width:70px; height:70px" id="azul">BLUE</button>
@@ -238,5 +238,3 @@
 	  
 	</script>
 	
-
-</body></html>

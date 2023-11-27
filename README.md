@@ -1,37 +1,61 @@
-
+<!DOCTYPE html>
 <!-- saved from url=(0169)file:///C:/Users/mane_/OneDrive/Escritorio/%C3%9Altimo%20Semestre/Internet%20de%20las%20cosas/Segundo%20Parcial/RFID_y_Bluetooth_con_registro_en_BD/Prueba.html?Estado=0# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<title>Prueba</title>
-
+<html lang="en"><head><meta http-equiv=refresh content=10>
+	<title>PAWS & MUNCHIES</title>
 	<style>
-		body{text-align:center;}
+		body{background: linear-gradient(to bottom, #4000A9, #898DCB); margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; text-align:center;}
 	</style>
 </head>
 
 <body>
+	<img src="itcelaya logo.png"
+	width="200"
+	height="200"
+	 /></div>
+
 	<div id="Ingresar">
-		<h1>Ingresar Datos (0-OFF / 1-ON)</h1>
-		<h4>Estado del LED</h4>
-		<form action="file:///C:/Users/mane_/OneDrive/Escritorio/%C3%9Altimo%20Semestre/Internet%20de%20las%20cosas/Segundo%20Parcial/RFID_y_Bluetooth_con_registro_en_BD/Prueba.html?Estado=0#">
-		<label for="ingresaAccion"> Estado </label>
-		<select name="Estado" id="ingresaAccion">
-		<option value="0"> Apagado</option>
-		<option value="1"> Encendido</option>
+		<font size="5" color="87CEEB">
+		<h1>"PAWS & MUNCHIES"</h1></font>
+		<font size="5" color="white" face="Times New Roman">
+		<h4>Fundamentos de Bases de datos e Internet de las cosas</br>
+
+		<h4> Usuario: <span id="user"></span>
+		<h4> Estado: <span id="edo"></span></h4></font></br>
+		
+		<form action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
+
+		<font size="4" color="white" face="Times New Roman">
+		<label for="ingresaAccion"> Compuerta </label>
+		<font size="3" color="white" face="Times New Roman">
+		<select name="Estado" id="ingresaAccion"></font>
+
+		<option value="0"> Abrir </option>
+		<option value="1"> Cerrar</option></font>
 		</select>
-		<br><br>
+		<br><br><br/>
 		</form>
 
-		<button style="background-color:lightgreen; border-color:green" id="verde">GREEN</button>
-		<button style="background-color:lightblue; border-color:blue" id="azul">BLUE</button>
-		<button style="background-color:lightred; border-color:red" id="rojo">RED</button>
-		<button style="background-color:lightyellow; border-color:yellow" id="amarillo">YELLOW</button>
+		<! – Botones para abrir dispensadores –>
+		<button style="background-color:lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">GREEN</button>
+		<button style="background-color:lightblue; border-color:blue; width:70px; height:70px" id="azul">BLUE</button>
+		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">RED</button>
+		<button style="background-color:lightyellow; border-color:yellow; width:70px; height:70px" id="amarillo">YELLOW</button></br></br></br>
+
+		<font size="5" color="white" face="Times New Roman">
+		<h5>Información</h5></font>
+
+		<! – Botones para informacion –>
+		<button style="background-color: lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">Ave</button>
+		<button style="background-color:lightblue; border-color:blue;width:70px; height:70px" id="azul">Ardilla</button>
+		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">Perro</button>
+		<button style="background-color:lightyellow; border-color:yellow; width:80 px; height:70px" id="amarillo">Tlacuache</button>
+
 		<h2 id="user" type="text">
 		</h2>
 		<h2 id="action" type="text">
 .		</h2>
-
 		<h2 id="edo" type="text">
-		</h2> 
+		</h2>
 
 	</div>
 
@@ -55,12 +79,12 @@
 
 	  // Initialize Firebase
 	  const app = initializeApp(firebaseConfig);
-
+	  
 	  import {getDatabase,set,get,update,remove,ref,child}
 	  from "https://www.gstatic.com/firebasejs/9.6.3/firebase-database.js"
-
+	  
 	  const db=getDatabase();
-
+	  
 	  var ingresaAccion=document.querySelector("#ingresaAccion");
 	  var edo=document.querySelector("#edo");	  
 	  var user=document.querySelector("#user");
@@ -69,8 +93,8 @@
 	  var botonAzul=document.querySelector("#azul");
 	  var botonRojo=document.querySelector("#rojo");
 	  var botonAmarillo=document.querySelector("#amarillo");
-
-
+	  
+	  
 	  function EditarDatosG(){
 		const dbref = ref(db);
 		get(child(dbref, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4" ))
@@ -80,7 +104,7 @@
             	if(edo === "Activo"){
             		update(ref(db, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4"),{
 	                Control: "G_"+ingresaAccion.value,
-
+	           
 		        })
 		        .then(()=>{
 		         	alert("Informacion Actualizada");
@@ -92,7 +116,7 @@
             	} else{
             		alert("Usuario inactivo");
             	}
-
+                    
             } else {
                     alert("No data found");
             }
@@ -112,7 +136,7 @@
             	if(edo === "Activo"){
             		update(ref(db, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4"),{
 	                Control: "B_"+ingresaAccion.value,
-
+	           
 		        })
 		        .then(()=>{
 		         	alert("Informacion Actualizada");
@@ -124,7 +148,7 @@
             	} else{
             		alert("Usuario inactivo");
             	}
-
+                    
             } else {
                     alert("No data found");
             }
@@ -133,9 +157,9 @@
             alert(error)
         })
 
-
+		
 	  }
-
+	  
 	  function EditarDatosR(){
 		const dbref = ref(db);
 		get(child(dbref, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4" ))
@@ -145,7 +169,7 @@
             	if(edo === "Activo"){
             		update(ref(db, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4"),{
 	                Control: "R_"+ingresaAccion.value,
-
+	           
 		        })
 		        .then(()=>{
 		         	alert("Informacion Actualizada");
@@ -157,7 +181,7 @@
             	} else{
             		alert("Usuario inactivo");
             	}
-
+                    
             } else {
                     alert("No data found");
             }
@@ -166,7 +190,7 @@
             alert(error)
         })
 	  }
-
+	  
 	  function EditarDatosY(){
 		const dbref = ref(db);
 		get(child(dbref, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4" ))
@@ -176,7 +200,7 @@
             	if(edo === "Activo"){
             		update(ref(db, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4"),{
 	                Control: "Y_"+ingresaAccion.value,
-
+	           
 		        })
 		        .then(()=>{
 		         	alert("Informacion Actualizada");
@@ -188,7 +212,7 @@
             	} else{
             		alert("Usuario inactivo");
             	}
-
+                    
             } else {
                     alert("No data found");
             }
@@ -202,17 +226,20 @@
 	  get(child(dbref,"fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4"))
 	  	.then((snapshot)=>{
 	  		if (snapshot.exists()){
-	  			edo.innerHTML = "Estado: " + snapshot.val().Estado;
-	  			user.innerHTML = "Usuario: " + snapshot.val().Usuario;
-	  			action.innerHTML = "Ultima accion realizada: " + snapshot.val().Control;
+	  			edo.innerHTML = snapshot.val().Estado;
+	  			document.getElementById("edo").innerHTML = edo.innerHTML;
+	  			user.innerHTML = snapshot.val().Usuario;
+	  			document.getElementById("user").innerHTML = user.innerHTML;
+	  			action.innerHTML = "Ultima accion realizada: " + snapshot.val().Control
 	  		}
 	  	})
+
 	  botonVerde.addEventListener("click",EditarDatosG);
 	  botonAzul.addEventListener("click",EditarDatosB);
 	  botonRojo.addEventListener("click",EditarDatosR);
 	  botonAmarillo.addEventListener("click",EditarDatosY);
-
+	  
 	</script>
-
+	
 
 </body></html>

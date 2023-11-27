@@ -11,7 +11,7 @@
 	<img src="itcelaya logo.png"
 	width="200"
 	height="200"
-	 /></div>
+	 />
 
 	<div id="Ingresar">
 		<font size="5" color="87CEEB">
@@ -53,8 +53,6 @@
 .		</h2>
 		<h2 id="edo" type="text">
 		</h2>
-
-	</div>
 
 	<script type="module"> 
 	// Import the functions you need from the SDKs you need

@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<div>
 	<img src="itcelaya logo.png"
 	width="200"
 	height="200"

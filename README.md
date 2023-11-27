@@ -2,6 +2,10 @@
 <!-- saved from url=(0169)file:///C:/Users/mane_/OneDrive/Escritorio/%C3%9Altimo%20Semestre/Internet%20de%20las%20cosas/Segundo%20Parcial/RFID_y_Bluetooth_con_registro_en_BD/Prueba.html?Estado=0# -->
 <html lang="en">
 <head>
+	<img src="itcelaya logo.png"
+	width="200"
+	height="200"
+	 />
 	<meta http-equiv=refresh content=10>
 	<title>PAWS & MUNCHIES</title>
 	<style>
@@ -10,10 +14,6 @@
 </head>
 
 <body>
-	<img src="itcelaya logo.png"
-	width="200"
-	height="200"
-	 />
 
 	<div id="Ingresar">
 		<font size="5" color="87CEEB">

@@ -20,7 +20,7 @@
 		<h4>Fundamentos de Bases de datos e Internet de las cosas</br>
 
 		<h4> Usuario: <span id="user"></span>
-		<h4> Estado: <span id="edo"></span></h4></font></br>
+		<h4> Estado: <span id="edo"></span></h4>
 		
 		<form action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
 

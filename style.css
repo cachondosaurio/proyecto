@@ -1,0 +1,379 @@
+
+body{
+    background: linear-gradient(to bottom, #4000A9, #898DCB);
+    margin: auto;
+    width: 180vh; height: 150vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align:center;
+}
+
+header{
+    background-color: aqua;
+}
+.imagen{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.Titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    color: #87CEEB;
+}
+
+.Subtitulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    color: #fefefe;
+}
+
+.Accion{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+    color: #fefefe;
+}
+
+.Seleccion{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: xx-large;
+    color: black;
+    margin-left: 120px;
+    margin-bottom: 70px;
+    display: block;
+    height: 40px;
+    width: 210px;
+    margin-left: 150px;
+}
+
+.CSelect{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    border-color: black;
+    border-width: 7px;
+    width: 90px;
+    height: 50px;
+    background-color: #d7d6ff;
+    margin-left: 15px;
+}
+
+.Abrir{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.Cerrar{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+.ComVerde{
+    background-color:rgb(0, 255, 0); 
+    border-color:darkgreen; 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:120px; 
+    height:70px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ComAzul{
+    background-color:rgb(0, 191, 255); 
+    border-color:darkblue;
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:120px; 
+    height:70px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ComRojo{
+    background-color:red; 
+    border-color:darkred; 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:120px; 
+    height:70px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ComAmarillo{
+    background-color:yellow; 
+    border-color:rgb(118, 124, 0); 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:120px; 
+    height:70px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Info{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    margin-left: 140px;
+    margin-bottom: 50px;
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.Verde{
+    background-color:rgb(0, 255, 0); 
+    border-color:darkgreen; 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:140px; 
+    height:70px;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
+.Azul{
+    background-color:rgb(0, 191, 255); 
+    border-color:darkblue;
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:140px; 
+    height:70px;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
+.Rojo{
+    background-color:red; 
+    border-color:darkred; 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:140px; 
+    height:70px;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
+.Amarillo{
+    background-color:yellow; 
+    border-color:rgb(118, 124, 0); 
+    border-width: 7px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    font-weight: bold;
+    width:140px; 
+    height:70px;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 20px;
+}
+
+.ventanaverde{
+    background-color:rgba(0, 255, 51, 0.9);
+    width: 60%;
+    height:fit-content;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-justify: auto;
+    padding: 15px;
+    min-height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    display: none;
+}
+
+#cerrarverde{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 70%;
+    top: 2%;
+}
+
+.textoaves{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    background-color: rgba(13, 124, 2, 0.4);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.fotoaves{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    align-items: center;
+    background-color: rgba(10, 110, 1, 0.4);
+    border-radius: 20%;
+}
+
+.ventanaazul{
+    background-color:rgba(0, 174, 255, 0.9);
+    width: 60%;
+    height:fit-content;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-justify: auto;
+    padding: 15px;
+    min-height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    display: none;
+}
+
+#cerrarazul{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 70%;
+    top: 2%;
+}
+
+.textoardillas{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    background-color: rgba(2, 20, 124, 0.4);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.fotoardillas{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    align-items: center;
+    background-color: rgba(2, 20, 124, 0.4);
+    border-radius: 20%;
+}
+
+.ventanaroja{
+    background-color:rgba(255, 8, 0, 0.9);
+    width: 60%;
+    height:fit-content;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-justify: auto;
+    padding: 15px;
+    min-height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    display: none;
+}
+
+#cerrarrojo{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 70%;
+    top: 2%;
+}
+
+.textoperros{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    background-color: rgba(124, 2, 2, 0.4);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.fotoperros{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    align-items: center;
+    background-color: rgba(124, 2, 2, 0.4);
+    border-radius: 20%;
+}
+
+.ventanaamarilla{
+    background-color:rgba(238, 255, 0, 0.9);
+    width: 60%;
+    height:fit-content;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-justify: auto;
+    padding: 15px;
+    min-height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    display: none;
+}
+
+#cerraramarillo{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 70%;
+    top: 2%;
+}
+
+.textotlacuaches{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    text-align: justify;
+    background-color: rgba(118, 124, 2, 0.4);
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.fototlacuaches{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    align-items: center;
+    background-color: rgba(124, 2, 2, 0.4);
+    border-radius: 20%;
+}

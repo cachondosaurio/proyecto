@@ -1,54 +1,153 @@
 <!DOCTYPE html>
-<!-- saved from url=(0169)file:///C:/Users/mane_/OneDrive/Escritorio/%C3%9Altimo%20Semestre/Internet%20de%20las%20cosas/Segundo%20Parcial/RFID_y_Bluetooth_con_registro_en_BD/Prueba.html?Estado=0# -->
-<html lang="en"><head><meta http-equiv=refresh content=10>
+<!-- saved from url=(0169)file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#-->
+
+<html lang="en"><head><meta http-equiv=refresh content=120>
 	<title>PAWS & MUNCHIES</title>
-	<style>
-		body{background: linear-gradient(to bottom, #4000A9, #898DCB); margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; text-align:center;}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<img src="itcelaya logo.png"
-	width="200"
-	height="200"
-	 /></div>
+	<img src="itcelaya logo.png" class="imagen" alt="">
 
 	<div id="Ingresar">
-		<font size="5" color="87CEEB">
-		<h1>"PAWS & MUNCHIES"</h1></font>
-		<font size="5" color="white" face="Times New Roman">
-		<h4>Fundamentos de Bases de datos e Internet de las cosas</br>
-
-		<h4> Usuario: <span id="user"></span>
-		<h4> Estado: <span id="edo"></span></h4></font></br>
+		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
+		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</br></br>
+		Usuario: <span id="user"></span></br>
+		Estado: <span id="edo"></span></h4></br>
 		
-		<form action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
+		<form class="Seleccion" action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
 
-		<font size="4" color="white" face="Times New Roman">
-		<label for="ingresaAccion"> Compuerta </label>
-		<font size="3" color="white" face="Times New Roman">
-		<select name="Estado" id="ingresaAccion"></font>
-
-		<option value="0"> Abrir </option>
-		<option value="1"> Cerrar</option></font>
+		<label class="Accion" for="ingresaAccion"> Compuerta  </label>
+		<select class="CSelect" name="Estado" id="ingresaAccion">
+		<option class="Abrir" value="0"> Abrir </option>
+		<option class="Cerrar" value="1"> Cerrar</option>
 		</select>
-		<br><br><br/>
+		<br><br/>
 		</form>
 
-		<! – Botones para abrir dispensadores –>
-		<button style="background-color:lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">GREEN</button>
-		<button style="background-color:lightblue; border-color:blue; width:70px; height:70px" id="azul">BLUE</button>
-		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">RED</button>
-		<button style="background-color:lightyellow; border-color:yellow; width:70px; height:70px" id="amarillo">YELLOW</button></br></br></br>
+		<! - Botones para abrir dispensadores ->
+		<button class="ComVerde" id="verde">Comedero de aves</button>
+		<button class="ComAzul" id="azul">Comedero de ardillas</button>
+		<button class="ComRojo" id="rojo">Comedero de perros</button>
+		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button></br></br></br>
+		
+		<h5 class="Info">Información</h5>
 
-		<font size="5" color="white" face="Times New Roman">
-		<h5>Información</h5></font>
+		<! - Botones para informacion (Los derechos de la imagen del boton cerrar pertenece a  Muhammad_Usman) ->
+		<div class="ventanaverde" id="infoverde">
+			
+			<div id="cerrarverde"><a href="javascript:cerrarv()"><img src="cerrar.png"></a></div>
+				INFORMACIÓN DE AVES
+		
+				<! - Informacion obtenida de https://www.revista.unam.mx/vol.3/num1/sabias1/que.html ->
+				<p class="textoaves">
+					Las aves son animales vertebrados, es decir, que poseen una columna vertebral, al igual que un gato o un conejo. Mantienen la temperatura corporal constante al igual que nosotros. Por ello se conocen como animales endotérmicos.
+					Las aves se caracterizan por tener plumas, con las que pueden volar y protegerse del ambiente.<br><br>			
+					Además, las aves se dividen en aves canoras y de ornato, mejor conocidas como pájaros, por su gran variedad de cantos y notas musicales. Las aves sólo emiten sonido y graznidos. En México se tienen registradas 1060 especies de aves, distribuidas en diferentes ambientes como bosques tropicales y templados, y zonas áridas y urbanas, entre otros.
+				</p><img src="House sparrow.png" class="fotoaves"><br><br>
 
-		<! – Botones para informacion –>
-		<button style="background-color: lightgreen; border-color:darkgreen; width:70px; height:70px" id="verde">Ave</button>
-		<button style="background-color:lightblue; border-color:blue;width:70px; height:70px" id="azul">Ardilla</button>
-		<button style="background-color:lightred; border-color:red; width:70px; height:70px" id="rojo">Perro</button>
-		<button style="background-color:lightyellow; border-color:yellow; width:80 px; height:70px" id="amarillo">Tlacuache</button>
+				Estado de los comederos
+			
+			</div>
+
+		<button class="Verde"><a href="javascript:infoave()">Info Aves</a></button>
+		<script>
+			function infoave(){
+				document.getElementById("infoverde").style.display="block";
+			}
+			function cerrarv(){
+				document.getElementById("infoverde").style.display="none";
+			}
+
+		</script>
+
+
+	<div class="ventanaazul" id="infoazul">
+				
+		<div id="cerrarazul"><a href="javascript:cerrara()"><img src="cerrar.png"></a></div>
+			INFORMACIÓN DE ARDILLAS
+
+			<! - Informacion obtenida de https://animalia.bio/es/mexican-gray-squirrel ->
+			<p class="textoardillas">
+				La ardilla gris mexicana (Sciurus aureogaster), conocida en México simplemente como ardilla gris, y también como ardilla arborícola o ardilla vientre rojo, 
+				es una especie de roedor esciuromorfo de la familia Sciuridae (ardillas y parientes, ).
+				Es una ardilla arborícola originaria de Guatemala y del este y sur de México, y ha sido introducida en algunas regiones de Florida (Estados Unidos) y de Argentina.<br><br> 
+				En México habita en 23 estados (las entidades donde no se ha registrado su presencia son: Baja California, Baja California Sur, Sonora, Chihuahua, Coahuila, Sinaloa, Durango, Quintana Roo y Yucatán). 
+				Su pelaje es gris y blanco, rojizo en el abdomen; existen individuos negros. Mide entre 42 y 55 cm con una cola de 20 a 30 cm de longitud. Orejas y ojos pequeños. Sus dientes son fuertes y los usa para abrir nueces.
+			</p><img src="Ardilla.png" class="fotoardillas"><br><br>
+
+			Estado de los comederos
+		
+		</div>
+		<button class="Azul"><a href="javascript:infoardillas()">Info Ardillas</a></button>
+		<script>
+			function infoardillas(){
+				document.getElementById("infoazul").style.display="block";
+			}
+			function cerrara(){
+				document.getElementById("infoazul").style.display="none";
+			}
+
+		</script>
+
+
+		<div class="ventanaroja" id="inforojo">
+					
+		<div id="cerrarrojo"><a href="javascript:cerrarr()"><img src="cerrar.png"></a></div>
+			INFORMACIÓN DE PERROS
+
+			<! - Informacion obtenida de https://www.nationalgeographicla.com/animales/perro-domestico ->
+			<p class="textoperros">
+				El término “perro doméstico” se refiere a cualquiera de los cientos de razas de perros que hay en el mundo hoy en día. 
+				Si bien estos animales varían drásticamente en cuanto a su apariencia, todos los perros, desde el chihuahua hasta el gran danés, son miembros de la misma especie, Canis familiaris. 
+				Esto separa a los perros domésticos de los caninos salvajes, como coyotes, zorros y lobos. <br><br>
+				Los perros domésticos se mantienen principalmente como mascotas, aunque muchas razas son capaces de sobrevivir por sí mismas, ya sea en un bosque o en las calles de una ciudad. 
+				Según un estudio realizado en 2016, un tercio de todos los hogares del mundo tienen un perro. Esto convierte al perro doméstico en la mascota más popular del planeta.
+			</p><img src="Perro.png" class="fotoperros"><br><br>
+
+			Estado de los comederos
+		
+		</div>
+		<button class="Rojo"><a href="javascript:infoperros()">Info Perros</a></button>
+		<script>
+			function infoperros(){
+				document.getElementById("inforojo").style.display="block";
+			}
+			function cerrarr(){
+				document.getElementById("inforojo").style.display="none";
+			}
+
+		</script>
+
+
+		<div class="ventanaamarilla" id="infoamarillo">
+						
+		<div id="cerraramarillo"><a href="javascript:cerraram()"><img src="cerrar.png"></a></div>
+			INFORMACIÓN DE TLACUACHES
+
+			<! - Informacion obtenida de https://www.ngenespanol.com/animales/tlacuache-asi-es-el-marsupial-que-enfrento-al-inframundo/ ->
+			<p class="textotlacuaches">
+				El nombre por el cual se conoce popularmente a este marsupial mexicano viene del náhuatl, “tlacuatzin” (el pequeño que come fuego). “Zorro del monte” o “zarigüeya” son otras formas de llamarlo. 
+				Por lo general, cuando se habla del tlacuache se está haciendo referencia a Didelphis virginiana (en el sur) y Didelphis marsupialis (en el norte), sin embargo, en México, existen otras seis especies de la familia Didelphidae:
+				<br><br>
+				La constitución física del tlacuache es robusta. Su rostro es largo y cónico. Sus orejas carecen de pelo. La cola, en mismas condiciones, le sirve para colgarse de los árboles.
+				El peso y tamaño es muy variable, ya que estos dependen de la especie. Un ejemplo de lo anterior es la Marmosa mexicana de 15 centímetros, en promedio, o el Didelphis marsupialis de 45 (1 a 3 kilogramos en etapa adulta), aproximadamente.
+			</p><img src="Tlacuache.png" class="fototlacuaches"><br><br>
+
+			Estado de los comederos
+		
+		</div>
+		<button class="Amarillo"><a href="javascript:infotlacuaches()">Info Tlacuaches</a></button>
+		<script>
+			function infotlacuaches(){
+				document.getElementById("infoamarillo").style.display="block";
+			}
+			function cerraram(){
+				document.getElementById("infoamarillo").style.display="none";
+			}
+
+		</script>
+
 
 		<h2 id="user" type="text">
 		</h2>
@@ -237,8 +336,7 @@
 	  botonVerde.addEventListener("click",EditarDatosG);
 	  botonAzul.addEventListener("click",EditarDatosB);
 	  botonRojo.addEventListener("click",EditarDatosR);
-	  botonAmarillo.addEventListener("click",EditarDatosY);
-	  
+	  botonAmarillo.addEventListener("click",EditarDatosY);	  
 	</script>
 	
 

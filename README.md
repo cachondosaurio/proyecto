@@ -12,6 +12,7 @@
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
 		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas
+  
 		Usuario: <span id="user"></span>
 		Estado: <span id="edo"></span></h4>
 		

@@ -11,9 +11,9 @@
 
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
-		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</br></br>
-		Usuario: <span id="user"></span></br>
-		Estado: <span id="edo"></span></h4></br>
+		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas
+		Usuario: <span id="user"></span>
+		Estado: <span id="edo"></span></h4>
 		
 		<form class="Seleccion" action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
 
@@ -25,15 +25,13 @@
 		<br><br/>
 		</form>
 
-		<! - Botones para abrir dispensadores ->
 		<button class="ComVerde" id="verde">Comedero de aves</button>
 		<button class="ComAzul" id="azul">Comedero de ardillas</button>
 		<button class="ComRojo" id="rojo">Comedero de perros</button>
-		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button></br></br></br>
+		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button>
 		
 		<h5 class="Info">Información</h5>
 
-		<! - Botones para informacion (Los derechos de la imagen del boton cerrar pertenece a  Muhammad_Usman) ->
 		<div class="ventanaverde" id="infoverde">
 			
 			<div id="cerrarverde"><a href="javascript:cerrarv()"><img src="cerrar.png"></a></div>

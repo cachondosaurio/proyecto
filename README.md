@@ -7,6 +7,21 @@
 </head>
 
 <body>
+	<h1 style="color:blue"> Reportes Paws & Munchies</h1>
+
+<?php
+
+$prueba=fopen("Consulta1.txt", "r") or die ("Error al leer");
+while (!feof($prueba)){
+$linea=fgets($prueba);    
+
+$saltodelinea=nl2br($linea);
+echo $saltodelinea;
+}
+
+fclose($prueba);
+
+?>
 	<img src="itcelaya logo.png" class="imagen" alt="">
 
 	<div id="Ingresar">

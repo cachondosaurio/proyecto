@@ -4,63 +4,57 @@
 <html lang="en"><head><meta http-equiv=refresh content=120>
 	<title>PAWS & MUNCHIES</title>
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 
-<body>
-	<h1 style="color:blue"> Reportes Paws & Munchies</h1>
-
-<?php
-
-$prueba=fopen("Consulta1.txt", "r") or die ("Error al leer");
-while (!feof($prueba)){
-$linea=fgets($prueba);    
-
-$saltodelinea=nl2br($linea);
-echo $saltodelinea;
-}
-
-fclose($prueba);
-
-?>
-	<img src="itcelaya logo.png" class="imagen" alt="">
+<body link="black" alink="white">
+	<img src="itcelaya logo.png" class="imagentec" alt="">
+	<img src="Logo Mecatronica.png" class="imagenmec" alt="">
 
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
-		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</h4>
-  
-		<h4 class="Subtitulo"> Usuario: <span id="user"></span></h4>
-		<h4 class="Subtitulo"> Estado: <span id="edo"></span></h4>
+		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</br></br>
+		Usuario: <span id="user"></span></br>
+		Estado: <span id="edo"></span></h4></br>
 		
 		<form class="Seleccion" action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
 
 		<label class="Accion" for="ingresaAccion"> Compuerta  </label>
 		<select class="CSelect" name="Estado" id="ingresaAccion">
-		<option class="Abrir" value="0"> Abrir </option>
-		<option class="Cerrar" value="1"> Cerrar</option>
+		<option class="Abrir" value="0"> Cerrar </option>
+		<option class="Cerrar" value="1"> Abrir</option>
 		</select>
 		<br><br/>
 		</form>
 
+		<! - Botones para abrir dispensadores ->
 		<button class="ComVerde" id="verde">Comedero de aves</button>
 		<button class="ComAzul" id="azul">Comedero de ardillas</button>
 		<button class="ComRojo" id="rojo">Comedero de perros</button>
-		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button>
+		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button></br></br></br>
 		
 		<h5 class="Info">Información</h5>
 
+		<! - Botones para informacion (Los derechos de la imagen del boton cerrar pertenece a  Muhammad_Usman) ->
 		<div class="ventanaverde" id="infoverde">
 			
 			<div id="cerrarverde"><a href="javascript:cerrarv()"><img src="cerrar.png"></a></div>
 				INFORMACIÓN DE AVES
 		
+				<! - Informacion obtenida de https://www.revista.unam.mx/vol.3/num1/sabias1/que.html ->
 				<p class="textoaves">
 					Las aves son animales vertebrados, es decir, que poseen una columna vertebral, al igual que un gato o un conejo. Mantienen la temperatura corporal constante al igual que nosotros. Por ello se conocen como animales endotérmicos.
 					Las aves se caracterizan por tener plumas, con las que pueden volar y protegerse del ambiente.<br><br>			
 					Además, las aves se dividen en aves canoras y de ornato, mejor conocidas como pájaros, por su gran variedad de cantos y notas musicales. Las aves sólo emiten sonido y graznidos. En México se tienen registradas 1060 especies de aves, distribuidas en diferentes ambientes como bosques tropicales y templados, y zonas áridas y urbanas, entre otros.
 				</p><img src="House sparrow.png" class="fotoaves"><br><br>
 
-				Estado de los comederos
-			
+				<p class="Titcomv">
+
+					Estado del comedero<br>
+					
+				</p>
+				Nivel de alimento: <br>
+				
 			</div>
 
 		<button class="Verde"><a href="javascript:infoave()">Info Aves</a></button>
@@ -80,6 +74,7 @@ fclose($prueba);
 		<div id="cerrarazul"><a href="javascript:cerrara()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE ARDILLAS
 
+			<! - Informacion obtenida de https://animalia.bio/es/mexican-gray-squirrel ->
 			<p class="textoardillas">
 				La ardilla gris mexicana (Sciurus aureogaster), conocida en México simplemente como ardilla gris, y también como ardilla arborícola o ardilla vientre rojo, 
 				es una especie de roedor esciuromorfo de la familia Sciuridae (ardillas y parientes, ).
@@ -88,7 +83,12 @@ fclose($prueba);
 				Su pelaje es gris y blanco, rojizo en el abdomen; existen individuos negros. Mide entre 42 y 55 cm con una cola de 20 a 30 cm de longitud. Orejas y ojos pequeños. Sus dientes son fuertes y los usa para abrir nueces.
 			</p><img src="Ardilla.png" class="fotoardillas"><br><br>
 
-			Estado de los comederos
+			<p class="Titcoma">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Azul"><a href="javascript:infoardillas()">Info Ardillas</a></button>
@@ -108,6 +108,7 @@ fclose($prueba);
 		<div id="cerrarrojo"><a href="javascript:cerrarr()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE PERROS
 
+			<! - Informacion obtenida de https://www.nationalgeographicla.com/animales/perro-domestico ->
 			<p class="textoperros">
 				El término “perro doméstico” se refiere a cualquiera de los cientos de razas de perros que hay en el mundo hoy en día. 
 				Si bien estos animales varían drásticamente en cuanto a su apariencia, todos los perros, desde el chihuahua hasta el gran danés, son miembros de la misma especie, Canis familiaris. 
@@ -116,7 +117,12 @@ fclose($prueba);
 				Según un estudio realizado en 2016, un tercio de todos los hogares del mundo tienen un perro. Esto convierte al perro doméstico en la mascota más popular del planeta.
 			</p><img src="Perro.png" class="fotoperros"><br><br>
 
-			Estado de los comederos
+			<p class="Titcomr">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Rojo"><a href="javascript:infoperros()">Info Perros</a></button>
@@ -136,6 +142,7 @@ fclose($prueba);
 		<div id="cerraramarillo"><a href="javascript:cerraram()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE TLACUACHES
 
+			<! - Informacion obtenida de https://www.ngenespanol.com/animales/tlacuache-asi-es-el-marsupial-que-enfrento-al-inframundo/ ->
 			<p class="textotlacuaches">
 				El nombre por el cual se conoce popularmente a este marsupial mexicano viene del náhuatl, “tlacuatzin” (el pequeño que come fuego). “Zorro del monte” o “zarigüeya” son otras formas de llamarlo. 
 				Por lo general, cuando se habla del tlacuache se está haciendo referencia a Didelphis virginiana (en el sur) y Didelphis marsupialis (en el norte), sin embargo, en México, existen otras seis especies de la familia Didelphidae:
@@ -144,7 +151,12 @@ fclose($prueba);
 				El peso y tamaño es muy variable, ya que estos dependen de la especie. Un ejemplo de lo anterior es la Marmosa mexicana de 15 centímetros, en promedio, o el Didelphis marsupialis de 45 (1 a 3 kilogramos en etapa adulta), aproximadamente.
 			</p><img src="Tlacuache.png" class="fototlacuaches"><br><br>
 
-			Estado de los comederos
+			<p class="Titcomam">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Amarillo"><a href="javascript:infotlacuaches()">Info Tlacuaches</a></button>
@@ -236,7 +248,6 @@ fclose($prueba);
 	  }
 
 	  function EditarDatosB(){
-
 	  	const dbref = ref(db);
 		get(child(dbref, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4" ))
         .then((snapshot)=>{
@@ -266,7 +277,6 @@ fclose($prueba);
             alert(error)
         })
 
-		
 	  }
 	  
 	  function EditarDatosR(){
@@ -339,7 +349,6 @@ fclose($prueba);
 	  			document.getElementById("edo").innerHTML = edo.innerHTML;
 	  			user.innerHTML = snapshot.val().Usuario;
 	  			document.getElementById("user").innerHTML = user.innerHTML;
-	  			action.innerHTML = "Ultima accion realizada: " + snapshot.val().Control
 	  		}
 	  	})
 

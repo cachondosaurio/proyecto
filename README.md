@@ -5,14 +5,12 @@
 	<head><meta http-equiv=refresh content=120>
 	<title>PAWS & MUNCHIES</title>
 	<link rel="stylesheet" href="style.css">
- 
-	<img src="itcelaya logo.png" class="imagentec" alt="">
-	<img src="Logo Mecatronica.png" class="imagenmec" alt="">
 	
 </head>
 
 <body link="black" alink="white">
-
+	<img src="itcelaya logo.png" class="imagentec" alt="">
+	<img src="Logo Mecatronica.png" class="imagenmec" alt="">
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
 		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</h4>

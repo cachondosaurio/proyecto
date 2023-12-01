@@ -4,10 +4,12 @@
 <html lang="en"><head><meta http-equiv=refresh content=120>
 	<title>PAWS & MUNCHIES</title>
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 
-<body>
-	<img src="itcelaya logo.png" class="imagen" alt="">
+<body link="black" alink="white">
+	<img src="itcelaya logo.png" class="imagentec" alt="">
+	<img src="Logo Mecatronica.png" class="imagenmec" alt="">
 
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
@@ -19,8 +21,8 @@
 
 		<label class="Accion" for="ingresaAccion"> Compuerta  </label>
 		<select class="CSelect" name="Estado" id="ingresaAccion">
-		<option class="Abrir" value="0"> Abrir </option>
-		<option class="Cerrar" value="1"> Cerrar</option>
+		<option class="Abrir" value="0"> Cerrar </option>
+		<option class="Cerrar" value="1"> Abrir</option>
 		</select>
 		<br><br/>
 		</form>
@@ -46,8 +48,13 @@
 					Además, las aves se dividen en aves canoras y de ornato, mejor conocidas como pájaros, por su gran variedad de cantos y notas musicales. Las aves sólo emiten sonido y graznidos. En México se tienen registradas 1060 especies de aves, distribuidas en diferentes ambientes como bosques tropicales y templados, y zonas áridas y urbanas, entre otros.
 				</p><img src="House sparrow.png" class="fotoaves"><br><br>
 
-				Estado de los comederos
-			
+				<p class="Titcomv">
+
+					Estado del comedero<br>
+					
+				</p>
+				Nivel de alimento: <br>
+				
 			</div>
 
 		<button class="Verde"><a href="javascript:infoave()">Info Aves</a></button>
@@ -76,7 +83,12 @@
 				Su pelaje es gris y blanco, rojizo en el abdomen; existen individuos negros. Mide entre 42 y 55 cm con una cola de 20 a 30 cm de longitud. Orejas y ojos pequeños. Sus dientes son fuertes y los usa para abrir nueces.
 			</p><img src="Ardilla.png" class="fotoardillas"><br><br>
 
-			Estado de los comederos
+			<p class="Titcoma">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Azul"><a href="javascript:infoardillas()">Info Ardillas</a></button>
@@ -105,7 +117,12 @@
 				Según un estudio realizado en 2016, un tercio de todos los hogares del mundo tienen un perro. Esto convierte al perro doméstico en la mascota más popular del planeta.
 			</p><img src="Perro.png" class="fotoperros"><br><br>
 
-			Estado de los comederos
+			<p class="Titcomr">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Rojo"><a href="javascript:infoperros()">Info Perros</a></button>
@@ -134,7 +151,12 @@
 				El peso y tamaño es muy variable, ya que estos dependen de la especie. Un ejemplo de lo anterior es la Marmosa mexicana de 15 centímetros, en promedio, o el Didelphis marsupialis de 45 (1 a 3 kilogramos en etapa adulta), aproximadamente.
 			</p><img src="Tlacuache.png" class="fototlacuaches"><br><br>
 
-			Estado de los comederos
+			<p class="Titcomam">
+
+				Estado del comedero<br>
+				
+			</p>
+			Nivel de alimento: <br>
 		
 		</div>
 		<button class="Amarillo"><a href="javascript:infotlacuaches()">Info Tlacuaches</a></button>
@@ -226,7 +248,6 @@
 	  }
 
 	  function EditarDatosB(){
-
 	  	const dbref = ref(db);
 		get(child(dbref, "fireb1-8f0f5-default/" + "-NgeTZgVRsPCfzDNOGD4" ))
         .then((snapshot)=>{
@@ -256,7 +277,6 @@
             alert(error)
         })
 
-		
 	  }
 	  
 	  function EditarDatosR(){
@@ -329,7 +349,6 @@
 	  			document.getElementById("edo").innerHTML = edo.innerHTML;
 	  			user.innerHTML = snapshot.val().Usuario;
 	  			document.getElementById("user").innerHTML = user.innerHTML;
-	  			action.innerHTML = "Ultima accion realizada: " + snapshot.val().Control
 	  		}
 	  	})
 

@@ -13,9 +13,9 @@
 
 	<div id="Ingresar">
 		<h1 class="Titulo">"PAWS & MUNCHIES"</h1>
-		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</br></br>
-		Usuario: <span id="user"></span></br>
-		Estado: <span id="edo"></span></h4></br>
+		<h4 class="Subtitulo">Fundamentos de Bases de datos e Internet de las cosas</h4>
+		<h4 Usuario: <span id="user"></span></h4>
+		<h4 Estado: <span id="edo"></span></h4>
 		
 		<form class="Seleccion" action="file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#">
 
@@ -27,21 +27,19 @@
 		<br><br/>
 		</form>
 
-		<! - Botones para abrir dispensadores ->
+		
 		<button class="ComVerde" id="verde">Comedero de aves</button>
 		<button class="ComAzul" id="azul">Comedero de ardillas</button>
 		<button class="ComRojo" id="rojo">Comedero de perros</button>
-		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button></br></br></br>
+		<button class="ComAmarillo" id="amarillo">Comedero de tlacuaches</button>
 		
 		<h5 class="Info">Información</h5>
 
-		<! - Botones para informacion (Los derechos de la imagen del boton cerrar pertenece a  Muhammad_Usman) ->
 		<div class="ventanaverde" id="infoverde">
 			
 			<div id="cerrarverde"><a href="javascript:cerrarv()"><img src="cerrar.png"></a></div>
 				INFORMACIÓN DE AVES
 		
-				<! - Informacion obtenida de https://www.revista.unam.mx/vol.3/num1/sabias1/que.html ->
 				<p class="textoaves">
 					Las aves son animales vertebrados, es decir, que poseen una columna vertebral, al igual que un gato o un conejo. Mantienen la temperatura corporal constante al igual que nosotros. Por ello se conocen como animales endotérmicos.
 					Las aves se caracterizan por tener plumas, con las que pueden volar y protegerse del ambiente.<br><br>			
@@ -74,7 +72,6 @@
 		<div id="cerrarazul"><a href="javascript:cerrara()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE ARDILLAS
 
-			<! - Informacion obtenida de https://animalia.bio/es/mexican-gray-squirrel ->
 			<p class="textoardillas">
 				La ardilla gris mexicana (Sciurus aureogaster), conocida en México simplemente como ardilla gris, y también como ardilla arborícola o ardilla vientre rojo, 
 				es una especie de roedor esciuromorfo de la familia Sciuridae (ardillas y parientes, ).
@@ -108,7 +105,6 @@
 		<div id="cerrarrojo"><a href="javascript:cerrarr()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE PERROS
 
-			<! - Informacion obtenida de https://www.nationalgeographicla.com/animales/perro-domestico ->
 			<p class="textoperros">
 				El término “perro doméstico” se refiere a cualquiera de los cientos de razas de perros que hay en el mundo hoy en día. 
 				Si bien estos animales varían drásticamente en cuanto a su apariencia, todos los perros, desde el chihuahua hasta el gran danés, son miembros de la misma especie, Canis familiaris. 
@@ -142,7 +138,6 @@
 		<div id="cerraramarillo"><a href="javascript:cerraram()"><img src="cerrar.png"></a></div>
 			INFORMACIÓN DE TLACUACHES
 
-			<! - Informacion obtenida de https://www.ngenespanol.com/animales/tlacuache-asi-es-el-marsupial-que-enfrento-al-inframundo/ ->
 			<p class="textotlacuaches">
 				El nombre por el cual se conoce popularmente a este marsupial mexicano viene del náhuatl, “tlacuatzin” (el pequeño que come fuego). “Zorro del monte” o “zarigüeya” son otras formas de llamarlo. 
 				Por lo general, cuando se habla del tlacuache se está haciendo referencia a Didelphis virginiana (en el sur) y Didelphis marsupialis (en el norte), sin embargo, en México, existen otras seis especies de la familia Didelphidae:

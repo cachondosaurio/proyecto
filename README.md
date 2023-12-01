@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!-- saved from url=(0169)file:///C:\Users\mane_\OneDrive\Escritorio\Último Semestre\Fundamentos de base de datos\Cuarto Parcial\Proyecto 4to parcial\Aplicacion Web.html?Estado=0#-->
 
 <html lang="en">
